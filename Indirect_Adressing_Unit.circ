@@ -26,7 +26,7 @@
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
   <lib desc="file#Sous Systeme\Adress_Comparator_4bit.circ" name="12"/>
-  <main name="main"/>
+  <main name="Indirect_Adressing_Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -45,7 +45,7 @@
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
-      <a name="facing" val="north"/>
+      <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </tool>
     <sep/>
@@ -66,9 +66,9 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="Indirect_Adressing_Unit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="Indirect_Adressing_Unit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="64.0"/>
     <comp lib="0" loc="(1020,900)" name="Constant">
@@ -110,6 +110,30 @@
     <comp lib="0" loc="(1990,660)" name="Constant">
       <a name="width" val="4"/>
     </comp>
+    <comp lib="0" loc="(2620,540)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OUTPUT_0"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(2620,580)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OUTPUT_1"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(2620,620)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OUTPUT_2"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="0" loc="(330,840)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
@@ -128,19 +152,19 @@
     </comp>
     <comp lib="0" loc="(340,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="DATA_1"/>
+      <a name="label" val="DATA_0"/>
       <a name="radix" val="16"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(340,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="DATA_2"/>
+      <a name="label" val="DATA_1"/>
       <a name="radix" val="16"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(340,270)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="DATA_3"/>
+      <a name="label" val="DATA_2"/>
       <a name="radix" val="16"/>
       <a name="width" val="16"/>
     </comp>
